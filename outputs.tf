@@ -5,3 +5,7 @@ output "bucket_name" {
 output "existing_bucket" {
     value = data.aws_s3_bucket.existing_bucket.arn
 }
+
+output "suffix" {
+    value = local.suffix
+}
